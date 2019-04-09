@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>PANGASINAN DICTIONARY</title>
+        <link rel="stylesheet" href="css/mj.css">
+    </head>
+    <body>
+    <nav class="navbar">
+        <div class="box">
+            <form>
+                <input type="text" name="" placeholder="Type...">
+                <input type="submit" name="" value="Search">
+            </form>
+        </div>
+        
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+                <svg width="30" height="30">
+                    <path d="M0,5 30,5" stroke="#fff"
+                    stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="fff"
+                    stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#fff"
+                    stroke-width="5"/>
+                </svg>
+            </a>
+        </span>        
+    </nav>
+        
+        
+        <div id="side-menu" class="side-nav">
+            <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+            <img class="logo_icon" src="PDIC.png" alt="Logo">
+            <br>
+            <br>
+            
+            <img class="icon_dic" src="dic.png" alt="Dictionary">
+            <a href="Dict.html">Dictionary</a>
+            <img class="icon_fav" src="fav.png" alt="Favorite">
+            <a href="#">Favorite</a>
+            <img class="icon_games" src="games.png" alt="Games">
+            <a href="index.html">Games</a>
+            <img class="icon_about" src="about.png" alt="About">
+            <a href="#">About</a>
+        </div>
+        
+        <div id="main">
+            <h1>Pangasinan Dictionary</h1>
+            <img class="logs" src="PDIC.png">
+        </div>
+        <script>
+            function openSlideMenu(){
+                document.getElementById('side-menu').style.width = '250px';
+                document.getElementById('main').style.marginLeft = '250px';
+            }
+            
+            function closeSlideMenu(){
+                document.getElementById('side-menu').style.width = '0';
+                document.getElementById('main').style.marginLeft = '0';
+            }
+        </script>
+    </body>
+</html>
